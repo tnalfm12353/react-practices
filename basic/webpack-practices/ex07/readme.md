@@ -1,0 +1,69 @@
+## webpack-practice: ex06
+
+1. 간단한 webpack loader 작성하고 설정해보기. (src/text-loader.js)  
+
+2. 프로젝트 디렉토리
+
+<pre>
+    /ex06
+      |--- package.json
+      |--- package-lock.json
+      |--- node-modules
+      |--- public
+      |       |--- index.html
+      |       |--- bundle.js              [build 결과]
+      |
+      |--- src
+      |     |--- App.js
+      |     |--- index.js
+      |     |--- text-loader.js
+      |
+      |
+      |--- webpack.config.js [webpack 설정 파일]
+</pre>
+
+3. 웹팩 설정
+```
+ webpack.config.js
+
+    const path = require('path');
+
+    module.exports = {
+        entry: path.resolve('src/index.js'),
+        output: {
+            path: path.resolve("public"),
+            filename: "bundle.js"
+        },
+        module: {
+            rules: [{
+                test: /\.text$/i,
+                loader: path.resolve('src/text-loader.js')
+            }]
+        },
+        devServer: {
+            contentBase: path.resolve("public"),
+            host: "0.0.0.0",
+            port: 9999,
+            inline: true,
+            liveReload: true,
+            hot: false,
+            compress: true,
+            historyApiFallback: true,
+        }
+    }
+    
+```
+
+4. 빌드하기
+```
+ bash
+    $ npx webpack  // webpack.config.js의 output 섹션에 지정한 ./public/bundle.js로 번들링 됨.
+
+```
+
+5. test server 실행
+```
+ bash
+    $ npx webpack serve --progress
+
+```

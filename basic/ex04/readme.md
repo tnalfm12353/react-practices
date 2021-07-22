@@ -30,7 +30,7 @@
       |--- node-modules
       |--- public
       |       |--- index.html
-      |       |--- bundle.js
+      |       |--- main.js
       |
       |--- src
       |     |--- index.js
