@@ -1,9 +1,8 @@
 import React from 'react';
 
-const Header = ({title}) =>{
+export default function() {
     return (
-        <h2>{title}</h2>
+        // <h2>App04</h2>
+        React.createElement('h2', null, 'App04') 
     );
 }
-
-export default Header;

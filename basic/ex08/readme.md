@@ -16,6 +16,7 @@
 
 ### 08. Dynamic HTML Rendering
 
+### 09. Component
 
 ### Run Examples
 ```

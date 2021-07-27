@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Content = ({subTitle}) =>{
+export default function() {
     return (
-        <p>{subTitle}</p>
+        // <p>
+        //     JSX Tutorials - Pure React(React API)로 함수 콤포넌트 작성
+        // </p>
+        React.createElement('p', null, 'JSX Tutorials - Pure React(React API)로 함수 콤포넌트 작성')
     );
 }
-
-export default Content
