@@ -14,7 +14,9 @@
 
 ### ex06: React(JSX 기반) 어플리케이션으로 리펙토링 : babel(transpile)  
 
-### ex07: React 기본개념  
+### ex07: ex00(RRA Ver) Reconfiguration
+
+### ex08: JSX tutorial
 
 ### webpack -practices  
 

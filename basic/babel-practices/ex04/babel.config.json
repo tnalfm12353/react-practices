@@ -1,5 +1,6 @@
 {
-    "presets": [["@babel/env",{
+    "presets": [
+        ["@babel/preset-env", {
             "targets": {
                 "ie": "11",
                 "edge": "89",
@@ -8,5 +9,6 @@
                 "opera": "76",
                 "safari": "15"
             }
-        }], "@babel/react"]
+        }]
+    ]
 }

@@ -2,17 +2,16 @@
   "name": "ex04",
   "version": "1.0.0",
   "description": "",
-  "main": "dev-server.mjs",
+  "main": "index.js",
   "scripts": {
-    "debug": "node dev-server.mjs",
-    "build": "npx webpack ./src/index.js -o ./public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "express": "^4.17.1",
-    "webpack": "^5.45.1",
-    "webpack-cli": "^4.7.2"
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8"
   }
 }
