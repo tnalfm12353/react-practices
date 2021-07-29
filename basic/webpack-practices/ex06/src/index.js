@@ -1,4 +1,4 @@
 import { App } from "./App";
-import './index.css';
+import './assets/css/index.css';
 
 document.getElementById('root').appendChild(App());
