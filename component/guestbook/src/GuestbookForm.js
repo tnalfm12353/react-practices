@@ -1,9 +1,9 @@
 import React from 'react';
-
+import styles from './assets/scss/GuestbookForm.scss';
 export default function GuestbookForm() {
 
     return(
-        <form className="Guestbook__Form">
+        <form className={styles.Guestbook__Form}>
             <input type="text" id="input-name" placeholder="이름" />
             <input type="password" id="input-password" placeholder="비밀번호" />
             <textarea id="tx-content" placeholder="내용을 입력해 주세요."></textarea>

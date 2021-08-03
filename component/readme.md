@@ -6,13 +6,9 @@
 
 ### ex03: React Event
 
-### ex04: State I: Controlled VS Uncontrolled Component
+### ex04: State 
 
-### ex05: State II: Stateful VS and Pure Component
-
-### ex06: State III: Data Flow (Data Flow: Down -> Top)
-
-### ex07: Component Lifecycle + AJAX(fetch, axios)
+### ex05: Component Lifecycle + AJAX(fetch, axios)
 
 ### Kanban Board
 

@@ -14,6 +14,12 @@
 
 ### 04. FoodList src/03: Data Flow with Function Component
 
+### 05. src/04: Property Validation(Design할 ㄸ ㅐ) 따로 설치 필요
+```
+ bash
+  $ npm i -D prop-types
+```
+
 ### Run Examples
 ```
  bash
