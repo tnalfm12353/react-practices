@@ -12,6 +12,8 @@
 
 ### 6. Performance  
 
+### 7. Integration
+
 ## 예제
 
 ### Kanban App
