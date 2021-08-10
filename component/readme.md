@@ -9,3 +9,5 @@
 ### ex04: State 
 
 ### ex05: Component Lifecycle
+
+### ex06: Immutability(불변성) of Component's state
