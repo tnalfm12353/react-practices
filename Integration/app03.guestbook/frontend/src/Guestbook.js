@@ -38,7 +38,7 @@ export default function Guestbook() {
             const {name, password, message} = vo;
             if(name && password && message) {
                 axios.post('/api/guestbook/add', vo, {headers:{ headers }})
-                      .then(res => {
+                      .then(res => {                
                         setGuestbooks( guestbooks => [res.data.data, ...guestbooks]);
                         setGuestbookVo({name:'', password:'', message:''});
                       });
