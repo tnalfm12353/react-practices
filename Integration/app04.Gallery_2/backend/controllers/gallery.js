@@ -3,7 +3,7 @@ const path = require('path');
 const models = require('../models');
 
 module.exports = {
-    read: async function(req, res, next) {
+    readAll: async function(req, res, next) {
         try {
             const results = await models.Gallery.findAll({
                 attributes: ['no', 'url', 'comment'],
@@ -40,17 +40,12 @@ module.exports = {
     },
     create: async function(req, res, next) {
         try {
-            
             const file = req.file;
-            console.log(req.body.file);
-            console.log(req.file);
-            
             if(!file) {
                 throw new Error('error: no file attached');
             }
 
             const content = fs.readFileSync(file.path);
-
             const storeDirectory = path.join(path.dirname(require.main.filename), process.env.STATIC_RESOURCES_DIRECTORY, process.env.UPLOADIMAGE_STORE_LOCATION);
             const storePath = path.join(storeDirectory, file.filename) + path.extname(file.originalname);
             const url = path.join(process.env.UPLOADIMAGE_STORE_LOCATION, file.filename) + path.extname(file.originalname);
@@ -64,7 +59,8 @@ module.exports = {
                 comment: req.body.comment || ''
             });
 
-            res.status(200)
+            res
+                .status(200)
                 .send({
                     result: 'success',
                     data: result,

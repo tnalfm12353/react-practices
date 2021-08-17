@@ -84,7 +84,7 @@ export default function App() {
                 </div>
             </Modal>
             {galleries.map((gallery)=>{
-                return <img src={gallery.url} />
+                return <img src={gallery.url}/>
             })}
 
         </Fragment>
